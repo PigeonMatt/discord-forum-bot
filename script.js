@@ -1,5 +1,13 @@
 // Firebase setup
-const firebaseConfig = { /* paste your config here */ };
+const firebaseConfig = { 
+  apiKey: "AIzaSyCXa8-PBHUqkfFlQEg9_k7z1MCLoirFYYQ",
+  authDomain: "tayoforum.firebaseapp.com",
+  projectId: "tayoforum",
+  storageBucket: "tayoforum.firebasestorage.app",
+  messagingSenderId: "1055771060043",
+  appId: "1:1055771060043:web:1258fee943f4c3652aaace",
+  measurementId: "G-2JDNXQHYS3" 
+};
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
@@ -25,3 +33,4 @@ db.collection("messages").orderBy("date", "desc").onSnapshot(snapshot => {
     list.appendChild(li);
   });
 });
+
