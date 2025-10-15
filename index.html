@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Tayo’s Forum</title>
-  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Tayo’s Forum</h1>
-  <input id="username" placeholder="Username">
-  <textarea id="message" placeholder="Message"></textarea>
-  <button id="post">Post</button>
+  <head>
+    <title>Tayo’s Forum</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Tayo’s Forum</h1>
+    <input id="username" placeholder="Username">
+    <textarea id="message" placeholder="Message"></textarea>
+    <button id="post">Post</button>
+    <ul id="messages"></ul>
 
-  <ul id="messages"></ul>
+    <!-- ✅ Firebase must load BEFORE your script -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
 
-  <script src="script.js"></script>
-</body>
+    <!-- ✅ your own code LAST -->
+    <script src="script.js"></script>
+  </body>
 </html>
-
