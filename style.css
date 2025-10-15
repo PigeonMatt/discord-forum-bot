@@ -8,8 +8,8 @@
 
 /* Body style */
 body {
-  background: #534B52;
-  color: #E0DDCF;
+  background: #1a1a24;
+  color: #a6a6bf;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +27,7 @@ h1 {
 input, textarea {
   width: 100%;
   max-width: 500px;
-  background: #2D232E;
+  background: #0e0e12;
   padding: 12px 15px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
@@ -37,8 +37,12 @@ input, textarea {
   transition: border-color 0.2s;
 }
 
+::placeholder {
+  color: #1a1a24;
+}
+
 input:focus, textarea:focus {
-  border-color: #5DB7DE;
+  border-color: #a6a6bf;
 }
 
 /* Button */
@@ -47,14 +51,14 @@ button {
   font-size: 1rem;
   border: none;
   border-radius: 12px;
-  background: #5DB7DE;
+  background: #a6a6bf;
   color: white;
   cursor: pointer;
   transition: background 0.2s;
 }
 
 button:hover {
-  background: #2A9BCB;
+  background: #535373;
 }
 
 /* Messages list */
@@ -78,7 +82,7 @@ ul#messages li {
 
 /* Username bold in messages */
 ul#messages li strong {
-  color: #5DB7DE;
+  color: #a6a6bf;
 }
 
 .credit {
