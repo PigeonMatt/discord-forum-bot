@@ -18,7 +18,7 @@ body {
 
 /* Header */
 h1 {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   font-size: 2.2rem;
   color: #222;
 }
@@ -90,3 +90,4 @@ ul#messages li strong {
 
 .credit:hover {
   opacity: 1;
+
