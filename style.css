@@ -79,3 +79,14 @@ ul#messages li {
 ul#messages li strong {
   color: #007bff;
 }
+
+.credit {
+  font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+  font-size: 1.2rem;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+  margin-bottom: 25px;
+}
+
+.credit:hover {
+  opacity: 1;
