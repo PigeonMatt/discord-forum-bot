@@ -1,0 +1,81 @@
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body style */
+body {
+  background: #f5f5f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Header */
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  color: #222;
+}
+
+/* Inputs and textarea */
+input, textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+}
+
+/* Button */
+button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Messages list */
+ul#messages {
+  list-style: none;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Each message */
+ul#messages li {
+  background: white;
+  border-radius: 12px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+/* Username bold in messages */
+ul#messages li strong {
+  color: #007bff;
+}
